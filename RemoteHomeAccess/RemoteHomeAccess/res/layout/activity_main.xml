@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainscreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    android:stretchColumns="*" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:padding="20sp" >
+
+        <Button
+            android:id="@+id/btnStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape"
+            android:height="80dp"
+            android:onClick="performAction"
+            android:text="STATUS"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold|italic"
+            android:layout_marginLeft="10sp" />
+
+        <Button
+            android:id="@+id/btnManage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape"
+            android:height="80dp"
+            android:onClick="performAction"
+            android:text="MANAGE"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold|italic" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp" >
+
+        <Button
+            android:id="@+id/btnHawkEye"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape"
+            android:height="80dp"
+            android:onClick="performAction"
+            android:text="HAWK-EYE"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape"
+            android:height="80dp"
+            android:text="SETTINGS"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold|italic"
+            android:onClick="performAction" />
+    </TableRow>
+
+</TableLayout>

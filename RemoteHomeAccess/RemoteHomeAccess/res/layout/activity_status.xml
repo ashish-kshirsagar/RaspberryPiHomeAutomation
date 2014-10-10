@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StatusActivity"
+    android:background="@drawable/background" >
+
+        
+    
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ToggleButton01"
+        android:layout_marginTop="36dp"
+        android:layout_toLeftOf="@+id/toggleButton1"
+        android:text="System Security"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tbtnNotifySetting"
+        android:layout_alignBottom="@+id/tbtnNotifySetting"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="Notification setting"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ToggleButton
+        android:id="@+id/tbtnNotifySetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbtnSysSecurity"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/TextView03"
+        android:text="ToggleButton"
+        android:onClick="sendCommand" />
+
+    <ToggleButton
+        android:id="@+id/tbtnSysSecurity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView02"
+        android:layout_alignBottom="@+id/TextView02"
+        android:layout_alignLeft="@+id/tbtnNotifySetting"
+        android:onClick="sendCommand"
+        android:text="ToggleButton" />
+
+</RelativeLayout>

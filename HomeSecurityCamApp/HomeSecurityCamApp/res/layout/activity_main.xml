@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="47dp"
+        android:text="Server IP Address"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/ipaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="34dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10"
+        android:background="@drawable/roundshape"
+        android:paddingLeft="10dp"
+        android:text="128.82.5.238" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/ipaddress"
+        android:layout_marginTop="41dp"
+        android:text="Server Port No."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/portno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ipaddress"
+        android:layout_alignTop="@+id/TextView01"
+        android:background="@drawable/roundshape"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:text="6788" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/portno"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/portno"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/roundshape"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:text="Living Room" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/location"
+        android:layout_alignLeft="@+id/TextView01"
+        android:text="Cam Location"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:layout_marginTop="46dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="@drawable/button_shape"
+        android:onClick="startCam"
+        android:text="START"
+        android:textColor="#FFF" />
+
+</RelativeLayout>
